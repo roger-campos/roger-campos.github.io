@@ -108,6 +108,8 @@ section.main .register h2
 	color: #fff;
 	max-width: 500px;
 	margin-top: 80px;
+	font-family:'Open Sans';
+	font-weight: normal;
 }
 section.main .register form
 {
