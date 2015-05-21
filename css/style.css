@@ -6,7 +6,7 @@ a
 h1
 {
 	font-family:'Montserrat','Helvetica-Light','Helvetica Light','Helvetica';
-	font-weight: 700;
+	font-weight: 400;
 }
 h2
 {
@@ -95,7 +95,7 @@ section.main .register
 	height: auto;
 	background: url('../images/entrepreneur.jpg');
 	background-size: 100% auto;
-	background-position: center center;
+	background-position: center top;
 	text-align: center;
 
 	position: absolute;
