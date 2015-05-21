@@ -1,8 +1,17 @@
 a
 {
 	color:#9c9c9c;
-	font-family:'Open Sans','Helvetica-Light','Helvetica Light','Helvetica';
 	text-decoration:none;
+}
+h1
+{
+	font-family:'Montserrat','Helvetica-Light','Helvetica Light','Helvetica';
+	font-weight: 700;
+}
+h2
+{
+	font-family:'Montserrat','Helvetica-Light','Helvetica Light','Helvetica';
+	font-weight: 400;
 }
 .content
 {
@@ -19,8 +28,8 @@ body
 {
 	background:url("../images/p12.png"),#fff;
 	color:#4d4d4d;
-	font-family:'Helvetica-Light','Helvetica Light','Helvetica';
-	font-weight:lighter;
+	font-family:'Nunito','Helvetica-Light','Helvetica Light','Helvetica';
+	font-weight:400;
 	font-size:16px;
 	line-height:25px;
 	text-align:center;
@@ -106,9 +115,8 @@ section.main .register h2
 	line-height: 40px;
 	text-shadow: 0 1px 1px rgba(0,0,0,.6);
 	color: #fff;
-	max-width: 500px;
+	max-width: 520px;
 	margin-top: 80px;
-	font-family:'Open Sans';
 	font-weight: normal;
 }
 section.main .register form
@@ -171,14 +179,14 @@ section.main .product .descriptions .description
 {
 	display: inline-block;
 	vertical-align: top;
-	width: 25%;
+	width: 27%;
 	height: auto;
 	margin: 30px 15px 0px 15px;
 }
 section.main .product .descriptions .description h2
 {
 	font-size: 21px;
-	min-height: 50px;
+	min-height: 75px;
 	margin: 10px 0;
 }
 section.main .product .descriptions .description p
@@ -269,7 +277,7 @@ footer a
 	}
 	section.main .space
 	{
-		height: 560px;
+		height: 600px;
 	}
 }
 
@@ -299,7 +307,7 @@ footer a
 	}
 	section.main .space
 	{
-		height: 485px;
+		height: 515px;
 	}
 	section.main .product .descriptions .description
 	{
@@ -352,13 +360,13 @@ footer a
 	}
 	section.main .register h1
 	{
-		font-size: 22px;
-		line-height: 32px;
+		font-size: 21px;
+		line-height: 31px;
 	}
 	section.main .register h2
 	{
-		font-size: 16px;
-		line-height: 26px;
+		font-size: 14px;
+		line-height: 24px;
 		max-width: 80%;
 	}
 	section.main .register form
@@ -376,6 +384,10 @@ footer a
 	section.main .space
 	{
 		height: 487px;
+	}
+	section.main .product .descriptions .description h2
+	{
+		font-size: 19px;
 	}
 	section.main .product .testimonials .testimonial img
 	{
