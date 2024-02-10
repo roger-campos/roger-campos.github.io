@@ -1,143 +1,260 @@
-@import url(https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap);
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed,
-figure, figcaption, footer, header, hgroup,
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
+* {
   margin: 0;
   padding: 0;
-  border: 0;
-  font: inherit;
-  font-size: 100%;
-  vertical-align: baseline;
 }
-
-html {
-  line-height: 1;
-}
-
-ol, ul {
-  list-style: none;
-}
-
-table {
-  border-collapse: collapse;
-  border-spacing: 0;
-}
-
-caption, th, td {
-  text-align: left;
-  font-weight: normal;
-  vertical-align: middle;
-}
-
-q, blockquote {
-  quotes: none;
-}
-q:before, q:after, blockquote:before, blockquote:after {
-  content: "";
-  content: none;
-}
-
-a img {
-  border: none;
-}
-
-article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
-  display: block;
-}
-
-/* -------------------
-	Variables
--------------------- */
-
-html {
-  min-height: 100%;
-  background: #fff;
-}
-
 body {
-  font-size: 100%;
-  font-family: helvetica, arial, sans-serif;
-  color: #222;
-}
-
-#progress {
+  font-family: 'Playfair Display';
+  background: #f3f1ea;
+  color: #060406;
   text-align: center;
+  min-width: 480px;
+  max-width: 480px;
+  margin: 0 auto;
 }
-
-#progress h1 {
-  font-family: 'Roboto Mono', monospace;
+h1 {
+  font-family: 'Birthstone Bounce', sans-serif;
+  font-size: 50px;
+  margin: 10px auto;
+}
+h3 {
+  font-family: 'Birthstone Bounce', sans-serif;
   font-size: 24px;
-  padding: 20px;
-  margin: 20px 40px;
-  background: #272b34;
-  color: #ffffff;
-  border-radius: 5px;
-  box-shadow: 0 0 10px rgba(0,0,0,0.5) inset;
 }
-
-#progress h1 .clase {
-  color: #eebf3f;
+p {
+  width: 80%;
+  font-size: 18px;
+  margin: 10px auto;
 }
-
-#progress h1 .metodo {
-  color: #61afee;
+audio {
+  /*display: none;*/
 }
-
-#progress h1 .string {
-  color: #98c379;
+.icon {
+  width: auto;
+  height: 64px;
 }
-
-#progress img {
-  width: 40%;
-}
-
-.tooltip {position:relative; float:right;}
-.tooltip > .tooltip-inner {background-color: #eebf3f; padding:5px 15px; color: #272b34; font-weight:bold; font-size:13px;}
-.popOver + .tooltip > .tooltip-arrow {border-left: 5px solid transparent; border-right: 5px solid transparent; border-top: 5px solid #eebf3f;}
-
-.container {
+.button {
+  width: 180px;
+  height: 40px;
+  margin: 10px auto;
+  line-height: 40px;
+  border: solid 2px #a27745;
+  background-color: #f3f1ea;
+  color: #a27745;
+  border-radius: 15px;
   display: inline-block;
-  width: 35%;
-  padding: 25px 0;
+  text-decoration: none;
+  font-weight: bold;
+  letter-spacing: 2px;
+}
+.button:hover {
+  border: solid 2px #f3f1ea;
+  background-color: #a27745;
+  color: #f3f1ea
+}
+.main-container {
+  max-width: 480px;
+  margin: 0 auto;
+  display: inline-block;
+
+  margin-top: 100%;
+  margin-bottom: 300px;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5);
+}
+
+/***   Banner   ***/
+.banner {
+  background-image: url("../img/image.png");
+  background-color: #000000;
+  width: 480px;
+  height: 480px;
+  background-size: cover;
+
+  top: 0;
+  position: fixed;
+  z-index: -1;
+}
+
+.content
+{
+  background: #f3f1ea;
+  position: relative;
+  z-index: 1;
+}
+
+/***   Bienvenida   ***/
+.welcome audio {
+  margin: 10px auto;
+}
+.welcome .fecha {
+  width: 100%;
+  height: auto;
+  margin: 10px auto;
+}
+.welcome .fecha div {
+  display: inline-block;
+}
+.welcome .fecha div p {
+  display: inline-block;
+  margin: 2px 0px;
+}
+.welcome .fecha .dia-semana {
+  width: 100px;
+  border-top: 2px solid #060406;
+  border-bottom: 2px solid #060406;
+  text-align: right;
   vertical-align: top;
+}
+.welcome .fecha .dia-año .dia {
+  width: 40px;
+  font-size: 35px;
+  line-height: 35px;
+  margin: -5px 0px 0px 0px;
+  font-weight: bold;
+  vertical-align: center;
+}
+.welcome .fecha .dia-año .año {
+  width: 40px;
+  font-size: 14px;
+  margin: 0px;
+  font-weight: bold;
+  vertical-align: center;
+}
+.welcome .fecha .mes {
+  width: 100px;
+  border-top: 2px solid #060406;
+  border-bottom: 2px solid #060406;
   text-align: left;
+  vertical-align: top;
 }
-.barWrapper {
-  margin: 30px auto;
+.welcome .padres {
+  margin: 0 auto;
 }
-.progress {
-  border-radius:3px;
-  overflow:visible;
+.welcome .padres div {
+  margin: 20px auto;
 }
-.progress-bar {
-  border-radius: 3px;
-  background: #272b34;
-  -webkit-transition: width 1.5s ease-in-out;
-  transition: width 1.5s ease-in-out;
+.welcome .padres h2 {
+ margin: 0 auto;
+ font-size: 20px;
+}
+.welcome .padres h3 {
+  margin: 0 auto;
+  font-size: 24px;
 }
 
-/* -------------------
-	Media Queries
--------------------- */
-@media screen and (max-width: 630px) {
-  #progress h1 {
-    font-size: 16px;
-  }
+/***   Ubicación   ***/
+.local .hora {
+  font-size: 40px;
+  margin: -10px auto 10px auto;
+}
 
-  #progress img {
-    width: 80%;
-  }
-  .container {
-    width: 80%;
-  }
+/***   Código de vestimenta   ***/
+.dresscode {
+  background: #000000;
+  padding: 20px 0px;
+  color: #f3f1ea;
+}
+.dresscode img {
+  width: 200px;
+  height: auto;
+}
+
+/***   Imagen   ***/
+.image {
+  background-image: url("../img/image.png");
+  background-color: #000000;
+  width: 480px;
+  height: 480px;
+  background-size: cover;
+}
+
+/***   Mesa de regalos   ***/
+.gift .liverpool {
+  width: 250px;
+  height: auto;
+}
+.gift .number-gifttable {
+  font-size: 30px;
+  letter-spacing: 3px;
+  color: #a27745;
+  margin: 0 auto;
+}
+
+/***   Confirmación de asistencia   ***/
+.assistance input {
+  width: 90%;
+  height: 26px;
+  margin: 5px auto;
+  padding: 5px;
+  color: #757575;
+}
+.assistance select {
+  width: 93%;
+  height:40px;
+  margin: 5px auto;
+  padding: 5px;
+  color: #757575;
+}
+.assistance textarea {
+  width: 90%;
+  height:148px;
+  margin: 5px auto;
+  padding: 5px;
+  color: #757575;
+}
+.assistance #buttonSubmit {
+  width: 90%;
+  height: 40px;
+  background-color: #a27745;
+  color: #f3f1ea;
+  border: none;
+  border-radius: 15px;
+}
+
+/***   Cuenta regresiva   ***/
+.count {
+  display: inline-block;
+}
+.bubble {
+  border-radius: 50%;
+  background-color: #a27745;
+  color: #f3f1ea;
+  width: 50px;
+  height: 50px;
+  line-height: 50px;
+  font-size: 25px;
+  margin: 0px 20px 0px 20px;
+  font-family: sans serif;
+}
+.count .text {
+  margin: 5px auto;
+  font-size: 12px;
+}
+
+/***   Pie de página   ***/
+.goodbye {
+  background-image: url("../img/image.png");
+  background-color: #000000;
+  width: 480px;
+  height: 480px;
+  background-size: cover;
+
+  bottom: -300px;
+  position: fixed;
+  z-index: -1;
+}
+
+header,
+footer,
+#scroll-animate-main {
+  -webkit-transition-property: all;
+     -moz-transition-property: all;
+      transition-property: all;
+
+  -webkit-transition-duration: 0.4s;
+     -moz-transition-duration: 0.4s;
+      transition-duration: 0.4s;
+
+  -webkit-transition-timing-function: cubic-bezier(0, 0, 0, 1);
+     -moz-transition-timing-function: cubic-bezier(0, 0, 0, 1);
+      transition-timing-function: cubic-bezier(0, 0, 0, 1);
 }
