@@ -36,21 +36,21 @@ $(document).ready(function() {
     $(window).load(function(){
         var windowHeight        = $(window).height(),
             footerHeight        = $('footer').height(),
-            heightDocument      = (windowHeight) + ($('.content').height()) + ($('footer').height()) - 400;
+            heightDocument      = (windowHeight) + ($('.content').height()) + ($('footer').height()) - 480;
 
-        // Definindo o tamanho do elemento pra animar
+        // Definir el tamaño del elemento a animar.
         $('#scroll-animate, #scroll-animate-main').css({
             'height' :  heightDocument + 'px'
         });
 
-        // Definindo o tamanho dos elementos header e conteúdo
+        // Establecer el tamaño del encabezado y los elementos de contenido
         $('.main-container').css({
             'margin-top' : '480px'
         });
 
         scrollFooter(window.scrollY, footerHeight);
 
-        // ao dar rolagem
+        // Al desplazarse
         window.onscroll = function(){
             var scroll = window.scrollY;
 
