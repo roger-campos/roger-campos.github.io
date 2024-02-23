@@ -66,9 +66,8 @@ $(document).ready(function() {
         }
     });
 
+    //reproducir audio
     var audio = document.getElementById("audio");
-    audio.play();
-
 
     $("body").on("click", function(){
       audio.play();
