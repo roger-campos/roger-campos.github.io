@@ -66,10 +66,11 @@ $(document).ready(function() {
         }
     });
 
+    var audio = document.getElementById("audio");
+    audio.play();
 
-    $(window).on("scroll", function(){
-      var audio = document.getElementById("audio");
 
-      audio.play(); 
+    $("body").on("click", function(){
+      audio.play();
     });
 });

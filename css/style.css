@@ -142,6 +142,9 @@ audio {
 }
 
 /***   Ubicación   ***/
+.local {
+  padding: 0px 0px 40px 0px;
+}
 .local .hora {
   font-size: 40px;
   margin: -10px auto 10px auto;
@@ -168,6 +171,9 @@ audio {
 }
 
 /***   Mesa de regalos   ***/
+.gift {
+  padding: 40px 0px 0px 0px;
+}
 .gift .liverpool {
   width: 250px;
   height: auto;
@@ -180,6 +186,9 @@ audio {
 }
 
 /***   Confirmación de asistencia   ***/
+.assistance {
+  padding: 40px 0px 0px 0px;
+}
 .assistance input {
   width: 90%;
   height: 26px;
@@ -211,6 +220,9 @@ audio {
 }
 
 /***   Cuenta regresiva   ***/
+.countdown {
+  padding: 20px 0px 40px 0px;
+}
 .count {
   display: inline-block;
 }
