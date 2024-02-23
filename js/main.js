@@ -1,4 +1,5 @@
 $(document).ready(function() {
+  //Cuenta regresiva
   const second = 1000,
         minute = second * 60,
         hour = minute * 60,
@@ -15,6 +16,7 @@ $(document).ready(function() {
       document.getElementById('segundos').innerText = Math.floor((distance % (minute)) / second);
     }, second)
 
+    //Scroll parallax
     function scrollFooter(scrollY, heightFooter)
     {
         if(scrollY >= heightFooter)
@@ -62,5 +64,12 @@ $(document).ready(function() {
 
             scrollFooter(scroll, footerHeight);
         }
+    });
+
+
+    $(window).on("scroll", function(){
+      var audio = document.getElementById("audio");
+
+      audio.play(); 
     });
 });
