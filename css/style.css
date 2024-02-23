@@ -240,10 +240,13 @@ audio {
 }
 
 /***   Pie de página   ***/
-.goodbye {
-  background-color: #a27845;
-}
 .goodbye img {
   width: 100%;
   height: auto;
+  display: block;
+}
+.goodbye .line {
+  width: 100%;
+  height: 4px;
+  background-color: #a27845;
 }
