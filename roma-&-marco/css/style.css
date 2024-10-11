@@ -1,0 +1,446 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: 'Montserrat', helvetica;
+  text-align: center;
+
+  background: #ffffff;
+  color: #0b0b0b;
+
+  min-width: 375px;
+  max-width: 932px;
+  margin: 0 auto;
+}
+h1 {
+  font-family: 'Prata', sans-serif;
+  font-size: 26px;
+  letter-spacing: 3px;
+  margin: 10px auto;
+}
+h2 {
+  font-family: 'Prata', sans-serif;
+  font-size: 20px;
+  letter-spacing: 3px;
+  margin: 10px auto;
+}
+h3 {
+  font-family: 'Prata', sans-serif;
+  font-size: 17px;
+  letter-spacing: 3px;
+  margin: 10px auto;
+}
+p {
+  font-family: 'Montserrat', helvetica;
+  font-size: 18px;
+  line-height: 2;
+  margin: 10px auto;
+}
+.button {
+  font-family: 'Artic', sans-serif;
+  font-size: 14px;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+
+  background-color: #ffffff;
+  color: #0b0b0b;
+
+  border-style: solid;
+  border-width: 1px;
+  border-radius: 3px;
+
+  padding: 10px 17px 10px 17px;
+  margin: 20px 0px 20px 0px;
+  display: inline-block;
+  text-decoration: none;
+}
+.button:hover {
+  background-color: #0b0b0b;
+  color: #ffffff;
+}
+.main-container {
+  margin-top: 110%;
+  box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.8);
+}
+.content
+{
+  background: #ffffff;
+  position: relative;
+  z-index: 1;
+}
+
+/***   Banner   ***/
+.banner {
+  background-image: url("../img/header.png");
+  background-color: #0b0b0b;
+  width: 100%;
+  height: 720px;
+  min-height: 420px;
+  background-size: cover;
+
+  top: 0;
+  position: fixed;
+  z-index: -1;
+}
+
+/***   Cuenta regresiva   ***/
+.countdown {
+  padding: 50px 0px 50px 0px;
+}
+.countdown .elementor-countdown {
+  display: inline-block;
+  margin: 0px 5px;
+}
+.countdown .elementor-countdown .result {
+  margin: 5px auto;
+  font-size: 30px;
+  font-family: 'Prata', sans-serif;
+}
+.countdown .elementor-countdown .label {
+  margin: 5px auto;
+  font-size: 10px;
+  font-family: 'Prata', sans-serif;
+  letter-spacing: 1.6px;
+}
+
+/***   Bienvenida   ***/
+.welcome {
+  padding: 0px 0px 0px 0px;
+}
+.welcome div {
+  width: 90%;
+  border-style: groove;
+  border-width: 1px;
+  margin: 50px auto;
+  padding: 20px 0px 20px 0px;
+  box-shadow: 2px 16px 27px -28px rgb(0 0 0 / .5) inset;
+}
+.welcome div img {
+  width: 64px;
+  height: 64px;
+}
+.welcome div h3 {
+  font-size: 20px;
+  text-transform: uppercase;
+}
+.welcome div p {
+  font-family: 'Montserrat', helvetica;
+  font-size: 12px;
+  letter-spacing: 3px;
+}
+.welcome .quote {
+  margin: 0 auto;
+  width: 80%;
+  border: none;
+  box-shadow: none;margin-top: 30px;
+}
+.welcome .phrase {
+  font-family: 'Prata', sans-serif;
+  font-size: 19px;
+  letter-spacing: 1.2px;
+}
+.welcome .phrase img {
+  width: 24px;
+  height: 24px;
+}
+.welcome .phrase .close {
+  transform: rotate(180deg);
+}
+.welcome .author {
+  font-family: 'Artic', sans-serif;
+  font-size: 14px;
+  letter-spacing: 3px;
+  text-align: right;
+}
+
+/***   Información   ***/
+.information {
+  padding: 0px 0px 30px 0px;
+}
+.information img {
+  width: 70%;
+  height: auto;
+  margin: 20px 0px;
+}
+.information .date {
+  font-family: 'Montserrat', helvetica;
+  font-size: 12px;
+  letter-spacing: 3px;
+}
+.information p {
+  font-size: 16px;
+  width: 90%;
+}
+
+/***   Linea de tiempo   ***/
+.timeline {
+  padding: 100px 0px 1px 0px;
+  background: #aaaa97;
+
+  position: relative;
+}
+.timeline::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 48px;
+  height: 100%;
+  width: 4px;
+  background: #0b0b0b;
+}
+.timeline .item {
+  margin: 0px 0px 100px 0px;
+  text-align: left;
+}
+.timeline .item-icon {
+  position: relative;
+  display: inline-block;
+  vertical-align: top;
+  width: 30px;
+  height: 30px;
+
+  border-style: solid;
+  border-width: 4px;
+  border-color: #0b0b0b;
+  border-radius: 50%;
+
+  margin: 20px 30px 20px 30px;
+  background: #ffffff;
+  text-align: center;
+}
+.timeline .item-icon span {
+  line-height: 30px;
+}
+.timeline .item-content {
+  position: relative;
+  display: inline-block;
+  vertical-align: center;
+  text-align: center;
+  background: #ffffff;
+  width: 70%;
+  height: auto;
+  min-height: 68px;
+}
+.timeline .item-content::before {
+  content: "";
+  position: absolute;
+  top: 27px;
+  right: 100%;
+  height: 0;
+  width: 0;
+  border: 12px solid transparent;
+  border-right: 12px solid #ffffff;
+}
+.timeline .item-content .message{
+  font-family: 'Montserrat', helvetica;
+  font-size: 12px;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+}
+.timeline .item-content .place{
+  font-family: 'Prata', sans-serif;
+  font-size: 12px;
+  letter-spacing: 3px;
+}
+.timeline .timeline-line {
+  border-width: 13px;
+  border-color: #0b0b0b;
+  border-style: solid;
+
+  position: absolute;
+  border-left: none !important;
+  z-index: 0;
+}
+
+/***   Efecto   ***/
+.is-hidden {
+  visibility: hidden;
+}
+.bounce-in {
+  visibility: visible;
+  -webkit-animation: cd-bounce-2 0.6s;
+  -moz-animation: cd-bounce-2 0.6s;
+  animation: cd-bounce-2 0.6s;
+}
+@-webkit-keyframes cd-bounce-2 {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateX(-100px);
+  }
+  60% {
+    opacity: 1;
+    -webkit-transform: translateX(20px);
+  }
+  100% {
+    -webkit-transform: translateX(0);
+  }
+}
+@-moz-keyframes cd-bounce-2 {
+  0% {
+    opacity: 0;
+    -moz-transform: translateX(-100px);
+  }
+  60% {
+    opacity: 1;
+    -moz-transform: translateX(20px);
+  }
+  100% {
+    -moz-transform: translateX(0);
+  }
+}
+@keyframes cd-bounce-2 {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateX(-100px);
+    -moz-transform: translateX(-100px);
+    -ms-transform: translateX(-100px);
+    -o-transform: translateX(-100px);
+    transform: translateX(-100px);
+  }
+  60% {
+    opacity: 1;
+    -webkit-transform: translateX(20px);
+    -moz-transform: translateX(20px);
+    -ms-transform: translateX(20px);
+    -o-transform: translateX(20px);
+    transform: translateX(20px);
+  }
+  100% {
+    -webkit-transform: translateX(0);
+    -moz-transform: translateX(0);
+    -ms-transform: translateX(0);
+    -o-transform: translateX(0);
+    transform: translateX(0);
+  }
+}
+@-webkit-keyframes cd-bounce-2-inverse {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateX(100px);
+  }
+  60% {
+    opacity: 1;
+    -webkit-transform: translateX(-20px);
+  }
+  100% {
+    -webkit-transform: translateX(0);
+  }
+}
+@-moz-keyframes cd-bounce-2-inverse {
+  0% {
+    opacity: 0;
+    -moz-transform: translateX(100px);
+  }
+  60% {
+    opacity: 1;
+    -moz-transform: translateX(-20px);
+  }
+  100% {
+    -moz-transform: translateX(0);
+  }
+}
+@keyframes cd-bounce-2-inverse {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateX(100px);
+    -moz-transform: translateX(100px);
+    -ms-transform: translateX(100px);
+    -o-transform: translateX(100px);
+    transform: translateX(100px);
+  }
+  60% {
+    opacity: 1;
+    -webkit-transform: translateX(-20px);
+    -moz-transform: translateX(-20px);
+    -ms-transform: translateX(-20px);
+    -o-transform: translateX(-20px);
+    transform: translateX(-20px);
+  }
+  100% {
+    -webkit-transform: translateX(0);
+    -moz-transform: translateX(0);
+    -ms-transform: translateX(0);
+    -o-transform: translateX(0);
+    transform: translateX(0);
+  }
+}
+
+/***   Imagen   ***/
+.single-image {
+  padding: 0px 0px 30px 0px;
+}
+.single-image img {
+  width: 100%;
+  height: auto;
+}
+
+/***   Confirma tu asistencia   ***/
+.assistance {
+  padding: 0px 0px 0px 0px;
+}
+.assistance .dresscode {
+  font-family: 'Montserrat', helvetica;
+  font-size: 12px;
+  letter-spacing: 3px;
+}
+.assistance .kids {
+  font-family: 'Montserrat', helvetica;
+  font-size: 12px;
+  letter-spacing: 3px;
+  width: 80%;
+}
+
+/***   Imagenes   ***/
+.images {
+  padding: 0px 0px 30px 0px;
+}
+.images h1 {
+  margin: 20px 0px 20px 0px;
+}
+.images img {
+  width: 100%;
+  height: auto;
+}
+
+/***   Mesa de regalos   ***/
+.gift {
+  padding: 0px 0px 30px 0px;
+}
+.gift img {
+  width: 300px;
+  height: auto;
+}
+.gift .number-gifttable {
+  font-family: 'Montserrat', helvetica;
+  font-size: 15px;
+  letter-spacing: 3px;
+}
+
+/***   Pie de página   ***/
+.goodbye {
+  background: #aaaa97;
+  color: #ffffff;
+  padding: 50px 0px 50px 0px;
+}
+.goodbye h1 {
+  font-size: 30px;
+}
+.goodbye .hashtag {
+  border-style: groove;
+  border-width: 1px;
+  width: 90%;
+  padding: 10px 0px 10px 0px;
+
+  font-family: 'Prata', sans-serif;
+  font-size: 16px;
+  letter-spacing: 3.2px;
+}
+.goodbye p {
+  font-family: 'Montserrat', helvetica;
+  font-size: 16px;
+}
+.goodbye img {
+  width: 80%;
+  height: auto;
+}
